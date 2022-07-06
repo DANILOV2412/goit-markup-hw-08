@@ -5,6 +5,15 @@
   --white-color: #ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
 /* header */
 
 body {
@@ -33,6 +42,11 @@ span:focus {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
 }
 
 /* site-nav list */
@@ -45,6 +59,8 @@ span:focus {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  display: inline-block;
+ 
 }
 .site-nav :hover,
 .site-nav :focus {
@@ -66,6 +82,7 @@ span:focus {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  display: inline;
 }
 .auth-nav :hover,
 .auth-nav :focus {
@@ -109,8 +126,10 @@ span:focus {
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   
   
 }
@@ -158,6 +177,7 @@ span:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
+  text-decoration: none;
 }
 .address-link-wh{
     color: var(--white-color);
@@ -205,4 +225,11 @@ span:focus {
 }
 .content {
   font-size: 0;
+}
+.title-name{
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
