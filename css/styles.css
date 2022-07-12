@@ -280,6 +280,9 @@ padding: 0;
  
 }
 /* comand */
+ .sect{
+  padding-bottom: 94px;
+} 
 .comand .block{
   display: flex;
   justify-content: space-between;
@@ -309,13 +312,14 @@ padding-bottom: 60px;
 .logo-foot {
   color: var(--accent-color);
   margin-right: 0;
-}
-.logo-log{
-  color: var(--white-color);
-}
-.logo-foot .logo-log{
   text-decoration: none;
 }
+.logo-log{
+  color: var(--white-color); 
+}
+/* .logo-foot .logo-log{
+  text-decoration: none;
+} */
 .address{
   padding-left: 0;
 }
