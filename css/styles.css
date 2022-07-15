@@ -76,9 +76,9 @@ span:focus {
 .site-nav {
   display: flex;
   margin: 0;
-  bottom: 0;
+  padding: 0;
 }
-.site-nav li+li{
+.site-nav li+li {
   margin-left: 50px;
 }
 
@@ -89,6 +89,8 @@ span:focus {
 }
  .site-nav .link-current {
     color: var(--accent-color);
+    text-decoration: none;
+    
  }
    /* auth-nav */
 
@@ -106,7 +108,7 @@ span:focus {
 .auth-nav{
   display: flex;
   margin: 0;
-  bottom: 0;
+  padding: 0;
  ;
 }
 .auth-nav :hover,
@@ -114,12 +116,13 @@ span:focus {
   color: var(--accent-color);
 }
 
-.link{
-  margin-right: 50px;
+.auth-nav li:last-child {
+  margin-left: 50px;
 }
-.auth-nav .link :nth-child(2n){
-  margin-right: 0;
+.auth-nav li {
+  margin-left: 0;
 }
+
 /* section-main */
 
 .section-main {
@@ -130,10 +133,10 @@ span:focus {
   padding-bottom: 280px;
   text-align: center;
   margin-bottom: 94px;
-  
+}
  
 
-}
+
 .white {
   color: var(--white-color);
   font-style: normal;
@@ -204,6 +207,7 @@ margin-left: 30px;
 .title {
   margin-bottom: 10px;
   color: var(--secondary-color);
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -215,6 +219,7 @@ margin-left: 30px;
 }
 .title-name {
   color: var(--secondary-color);
+  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -223,6 +228,7 @@ margin-left: 30px;
 
 .text {
   color: var(--primery-color);
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -233,6 +239,7 @@ margin-left: 30px;
 }
 .profess {
     color: var(--primery-color);
+    text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -303,9 +310,7 @@ padding-bottom: 60px;
 .logo-log{
   color: var(--white-color); 
 }
-/* .logo-foot .logo-log{
-  text-decoration: none;
-} */
+
 .address{
   padding-left: 0;
 }
