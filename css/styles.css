@@ -46,6 +46,8 @@ span:focus {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  padding: 32px 0;
+  display: block;
  
 }
 
@@ -57,7 +59,6 @@ span:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
  
 }
 
@@ -77,6 +78,8 @@ span:focus {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: block;
 }
 
 .site-nav {
@@ -96,6 +99,8 @@ span:focus {
  .site-nav .link-current {
     color: var(--accent-color);
     text-decoration: none;
+    padding: 32px 0;
+    display: block;
     
  }
    /* auth-nav */
@@ -108,6 +113,8 @@ span:focus {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: block;
 }
 
 
@@ -136,7 +143,7 @@ span:focus {
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
   margin-bottom: 0;
 }
@@ -189,7 +196,7 @@ span:focus {
 }
 .section-home{
   padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   justify-content: space-between;
 
 
@@ -251,6 +258,7 @@ margin-left: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+    margin: 0;
 }
 /* section-info */
 .section-info{
@@ -294,24 +302,21 @@ padding: 0;
   padding: 0;
  
   }
-  .comand-prof{
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  .comand-prof {
+ padding: 32px 0;
+  }
+  .border-radius{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   
-.comand .block:not(:first-child){
-  margin-left: 30px;
-}
 .title-name{
-  padding-top: 30px;
+  padding: 0;
   margin-bottom: 10px;
   margin-top: 0;
 }
-.profess{
-  padding-bottom: 30px;
-  margin-top: 0;
-}
+
 /* footer */
 
 
@@ -374,12 +379,11 @@ padding-bottom: 60px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  background: #F5F4FA;
-  cursor: pointer;
+    cursor: pointer;
 }
 .button-second{
   padding: 6px 22px;
-  border-radius: 4px;
+  border: none;
 }
 
 
@@ -453,7 +457,7 @@ padding-bottom: 60px;
   border: 1px solid #EEEEEE;
 }
 .boldtext {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
