@@ -222,9 +222,10 @@ background-repeat: no-repeat;
 }
 /* section-home */
 .sect-icon{
-  padding: 25px 100px;
-  width: 100%;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 120px;
   margin-bottom: 30px;
   background-size: contain;
   background-repeat: no-repeat;
