@@ -3,7 +3,7 @@
   --secondary-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  --animation:250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 
@@ -82,6 +82,8 @@ span:focus {
   letter-spacing: 0.02em;
   padding: 34px 0;
   display: block;
+  position: relative;
+  transition: var(--animation);
  
 
 }
@@ -130,7 +132,8 @@ span:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding: 32px 0;
-  /* display: block; */
+  position: relative;
+  transition: var(--animation);
 }
 
 
@@ -144,6 +147,8 @@ span:focus {
 .link{
   display: flex;
   align-items: center;
+  
+  
 }
 .link.phone{
   display: flex;
@@ -227,6 +232,8 @@ background-repeat: no-repeat;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--white-color);
+    position: relative;
+    transition: var(--animation);
   
   
   
@@ -445,6 +452,8 @@ position: relative;
       border: none;
      justify-content: center;
       align-items: center;
+      position: relative;
+      transition: var(--animation);
 }
       .comand-under .button-icon{
         fill: #AFB1B8;
@@ -545,6 +554,8 @@ position: relative;
   border: 1px solid currentColor;
   border-radius: 4px;
   color: #AFB1B8;
+  position: relative;
+  transition: var(--animation);
 
 }
 
@@ -675,6 +686,7 @@ padding-bottom: 60px;
 .button-second{
   padding: 6px 22px;
   border: none;
+  border-radius: 4px;
 }
 
 
@@ -746,14 +758,19 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .img-portfolio :nth-child(3n){
   margin-right: 0;
 }
-.img-portfolio :nth-last-child(-n+3){
+.img-portfolio :nth-last-child(-n+3){ 
   margin-bottom: 0;
 }
-.contein-txt{
 
+.port-list a{
+text-decoration: none;
+}
+
+.contein-txt{
   padding: 20px 24px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
+  /* border-top: none; */
 }
 .boldtext {
   /* padding-top: 20px; */
@@ -762,13 +779,14 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin-top: 0;
+  margin: 0;
 
 }
 img{
   border: none;
 }
 .txt-title {
+  margin:0 ;
   margin-top: 4px;
   color: var(--primery-color);
   font-style: normal;
@@ -787,7 +805,7 @@ img{
   position: absolute;
    width: 100%;
   height: 100%;
-  bottom: 0; 
+  bottom: -1px; 
    left: 0; 
   margin: 0;
   padding: 63px 24px;
@@ -800,9 +818,10 @@ transform: translateY(100%);
   background: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-block:hover .text-block,
-.portfolio-block:focus .text-block{
+.port-list:hover .text-block,
+.port-list:focus .text-block{
 transform: translateY(0);
+bottom: 0;
 }
 
 
