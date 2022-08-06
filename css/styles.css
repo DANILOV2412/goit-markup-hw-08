@@ -252,12 +252,16 @@ background-repeat: no-repeat;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
- 
+  transition: opacity 500ms linear, visibility 500ms linear;
+ z-index: 10;
+
 }
 
 .backdrop.is-hidden {
   opacity: 0;
    pointer-events: none;
+   
+
 }
 
 .modal {
@@ -271,8 +275,17 @@ background-repeat: no-repeat;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+transition: transform 500ms linear;
+
 
 }
+.backdrop.is-hidden .modal{
+  
+transform: translate(-50%, -50%) scale(0) rotate(45deg);
+}
+
+
+
 .modal-button{
   position: absolute;
   width: 30px;
@@ -286,10 +299,14 @@ right: 8px;
 }
 
 .close-icon{
+  transition: transform 0.5s ease, border-radius 0.3s ease, background 0.4s ease;
   
   width: 11px;
   height: 11px;
-
+}
+.close-icon:hover,
+.close-icon:focus{
+  transform: rotate(0.5turn);
 }
 
       /* form */
