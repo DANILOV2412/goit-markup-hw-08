@@ -1,0 +1,53 @@
+   .form-text {
+       display: block;
+       margin-bottom: 5px;
+       text-align: left;
+       font-weight: 400;
+       font-size: 12px;
+   }
+
+   .check-form {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 30px;
+   }
+
+   .check-input {
+       appearance: none;
+   }
+
+   
+   .check-box {
+       margin-right: 8px;
+       margin-left: 12px;
+       width: 15px;
+       height: 15px;
+       border: 2px solid black;
+       border-radius: 4px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: contain;
+
+    .check-input:checked+ & {
+            background-color: var(--accent-color);
+            background-image: url(../img/check.svg);
+            border: none;
+        }
+
+
+   }
+
+   .checkbox-text {
+       text-align: left;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 1.71;
+       color: var(--primery-color);
+       letter-spacing: 0.03em;
+   }
+
+
+   .form-link {
+       color: var(--accent-color);
+   }

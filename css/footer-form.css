@@ -1,0 +1,35 @@
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form h3 {
+  margin-top: 72px;
+  text-align: left;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-wrap {
+  display: flex;
+}
+
+.footer-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 12px;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}/*# sourceMappingURL=footer-form.css.map */

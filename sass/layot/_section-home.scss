@@ -1,0 +1,83 @@
+.sect-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+
+}
+
+.skils {
+    font-size: 0;
+}
+
+.section-home {
+    padding-top: 94px;
+    justify-content: space-between;
+}
+
+.title-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.title-text li {
+    width: 270px;
+}
+
+.title-text li+li {
+    margin-left: 30px;
+}
+
+
+.title {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+
+}
+
+.title-name {
+    color: var(--secondary-color);
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.text {
+    color: var(--primery-color);
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 0;
+
+
+
+}
+
+.profess {
+    color: var(--primery-color);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    margin-top: 0;
+}

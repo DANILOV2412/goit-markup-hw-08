@@ -1,0 +1,63 @@
+.auth-nav .link {
+    color: var(--primery-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    position: relative;
+    transition: var(--animation);
+}
+
+
+.auth-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+
+.link {
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.link.phone {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.auth-email {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+            fill: currentColor;
+        }
+}
+
+
+
+.auth-phone {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.auth-nav li:last-child {
+    margin-left: 50px;
+}
+
+.auth-nav li {
+    margin-left: 0;
+}

@@ -1,0 +1,24 @@
+.button {
+    min-width: 200px;
+    border: none;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    position: relative;
+    transition: var(--animation);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+
+}
+

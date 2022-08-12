@@ -1,0 +1,23 @@
+.logo-logo {
+  color: var(--secondary-color);
+  transition: var(--animation);
+}
+
+.logo-logo:hover,
+.logo-logo:focus {
+  color: var(--accent-color);
+}
+
+.logo {
+  margin-right: 93px;
+  color: var(--accent-color);
+  font-family: raleway, sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  /* padding: 32px 0; */
+  display: block;
+}/*# sourceMappingURL=header.css.map */
