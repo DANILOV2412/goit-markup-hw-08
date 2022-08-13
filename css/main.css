@@ -85,7 +85,7 @@ img {
   background-color: #188CE8;
 }
 
-.footer-submit-icon {
+.footer-submit {
   background-color: var(--accent-color);
   border: none;
   min-width: 200px;
@@ -99,17 +99,17 @@ img {
   border-radius: 4px;
   transition: var(--animation);
 }
-.footer-submit-icon:hover, .footer-submit-icon:focus {
+.footer-submit:hover, .footer-submit:focus {
   background-color: #188CE8;
 }
 
-.footer-icon {
+.footer-submit__icon {
   position: absolute;
   top: 13px;
   right: 28px;
 }
 
-.footer-sub {
+.footer-submit__btn {
   background-color: transparent;
   color: var(--white-color);
   width: 109px;
@@ -137,7 +137,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.under .button-icon {
+.under__icon {
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -148,6 +148,32 @@ img {
   border: none;
   justify-content: center;
   align-items: center;
+}
+
+.under__icon:hover,
+.under__icon:focus {
+  background-color: var(--accent-color);
+}
+
+.under__icon:hover .under__instagram,
+.under__icon:hover .under__twitter,
+.under__icon:hover .under__facebook,
+.under__icon:hover .under__linkedin {
+  fill: var(--white-color);
+}
+
+.under__icon:focus .under__instagram,
+.under__icon:focus .under__twitter,
+.under__icon:focus .under__facebook,
+.under__icon:focus .under__linkedin {
+  fill: var(--white-color);
+}
+
+.under__instagram,
+.under__twitter,
+.under__facebook,
+.under__linkedin {
+  fill: var(--white-color);
 }
 
 .clients {
@@ -222,11 +248,11 @@ img {
   text-transform: uppercase;
 }
 
-.footer-wrap {
+.wrap {
   display: flex;
 }
 
-.footer-input {
+.wrap__input {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -248,7 +274,6 @@ img {
   justify-content: space-between;
   list-style: none;
 }
-
 .comand-under :not(:last-child) {
   margin-right: 10px;
 }
@@ -273,15 +298,12 @@ img {
   position: relative;
   transition: var(--animation);
 }
-.button-icon:hover, .button-icon:focus {
-  background-color: var(--logo-focus-color);
-}
-.comand-under .button-icon, .comand-under .button-icon {
-  background-color: var(--accent-color);
-}
 
 .comand-under .button-icon {
   fill: #AFB1B8;
+}
+.comand-under .button-icon:hover, .comand-under .button-icon:focus {
+  background-color: var(--accent-color);
 }
 
 .button-icon:hover .button-instagram,
@@ -405,7 +427,7 @@ img {
   display: block;
 }
 
-.button-list {
+.button-list__second {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -414,20 +436,18 @@ img {
   cursor: pointer;
 }
 
-.button-second {
+.button-list__second {
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
   transition: var(--animation);
 }
-
-.button-second:hover,
-.button-second:focus {
+.button-list__second:hover, .button-list__second:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
 
-.button-second.current {
+.button-list__second-current {
   color: var(--white-color);
   background-color: var(--accent-color);
   padding: 6px 22px;
@@ -565,8 +585,7 @@ img {
 .auth-nav li:last-child {
   margin-left: 50px;
 }
-
-.auth-nav li {
+.auth-nav li:last-child li {
   margin-left: 0;
 }
 
@@ -591,9 +610,6 @@ img {
   font-size: 44px;
   line-height: 1.4;
   text-transform: uppercase;
-}
-
-.white {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -634,10 +650,12 @@ img {
   outline: none;
   transition: border-color var(--animation);
 }
+
 .form-input:focus {
   border-color: var(--accent-color);
 }
-.form-input + .form-img {
+
+.form-input:focus + .form-img {
   fill: var(--accent-color);
 }
 
@@ -839,7 +857,7 @@ img {
   align-items: baseline;
 }
 
-.foot-title {
+.footer-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -869,26 +887,24 @@ img {
   line-height: 1.2;
 }
 
-.logo-foot {
+.footer__logo {
   color: var(--accent-color);
   margin-right: 0;
   text-decoration: none;
 }
 
-.logo-log {
+.footer__logo-log {
   color: var(--white-color);
 }
 
 .address {
   padding-left: 0;
 }
-
-.address :not(:first-child) :hover,
-.address :not(:first-child) :focus {
+.address :not(:first-child) :hover, .address :not(:first-child) :focus {
   color: var(--accent-color);
 }
 
-.address-link {
+.address__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
@@ -897,11 +913,12 @@ img {
   text-decoration: none;
 }
 
-.address-link-wh {
+.address__link-white {
   color: var(--white-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .content {
@@ -928,6 +945,12 @@ img {
   margin-bottom: 0;
   padding-left: 0;
 }
+.img-portfolio :nth-child(3n) {
+  margin-right: 0;
+}
+.img-portfolio :nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
 
 .img-portfolio li {
   margin-right: 30px;
@@ -937,25 +960,17 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.img-portfolio :nth-child(3n) {
-  margin-right: 0;
-}
-
-.img-portfolio :nth-last-child(-n+3) {
-  margin-bottom: 0;
-}
-
-.port-list a {
+.img-portfolio__list a {
   text-decoration: none;
 }
 
-.contein-txt {
+.img-portfolio__contein {
   padding: 20px 24px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
 
-.boldtext {
+.img-portfolio__boldtext {
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
@@ -968,7 +983,7 @@ img {
   border: none;
 }
 
-.txt-title {
+.img-portfolio__title {
   margin: 0;
   margin-top: 4px;
   color: var(--primery-color);
@@ -978,12 +993,12 @@ img {
   line-height: 1.9;
 }
 
-.portfolio-block {
+.img-portfolio__block {
   position: relative;
   overflow: hidden;
 }
 
-.text-block {
+.img-portfolio__text {
   display: inline-block;
   position: absolute;
   width: 100%;
@@ -1000,9 +1015,7 @@ img {
   transform: translateY(100%);
   background: rgba(33, 150, 243, 0.9);
 }
-
-.port-list:hover .text-block,
-.port-list:focus .text-block {
+.img-portfolio__list:hover .img-portfolio__text, .img-portfolio__list:focus .img-portfolio__text {
   transform: translateY(0);
   bottom: 0;
 }/*# sourceMappingURL=main.css.map */

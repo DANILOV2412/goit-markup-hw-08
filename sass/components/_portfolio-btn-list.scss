@@ -1,4 +1,4 @@
-.button-list {
+.button-list__second {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -7,22 +7,24 @@
     cursor: pointer;
 }
 
-.button-second {
+.button-list__second {
     padding: 6px 22px;
     border: none;
     border-radius: 4px;
     transition: var(--animation);
 
+    &:hover,
+     &:focus {
+            color: var(--white-color);
+            background-color: var(--accent-color);
+        }
+
 }
 
 
-.button-second:hover,
-.button-second:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color);
-}
 
-.button-second.current {
+
+.button-list__second-current {
     color: var(--white-color);
     background-color: var(--accent-color);
     padding: 6px 22px;

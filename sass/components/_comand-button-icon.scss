@@ -4,10 +4,10 @@
     padding: 0 32px;
     justify-content: space-between;
     list-style: none;
-}
 
-.comand-under :not(:last-child) {
-    margin-right: 10px;
+    & :not(:last-child) {
+            margin-right: 10px;
+        }
 }
 
 
@@ -31,24 +31,18 @@
     align-items: center;
     position: relative;
     transition: var(--animation);
-
-     &:hover,
-     &:focus {
-            background-color: var(--logo-focus-color);
-        }
-                .comand-under &,
-                .comand-under & {
-                    background-color: var(--accent-color);
-                }
-
 }
 
-.comand-under .button-icon {
-    fill: #AFB1B8;
-}
-
-
-
+        .comand-under .button-icon {
+            fill: #AFB1B8;
+        
+          &:hover,
+          &:focus {
+              background-color: var(--accent-color);
+          }
+        
+          }
+          
 
 
 .button-icon:hover .button-instagram,
@@ -65,5 +59,4 @@
 .button-icon:focus .button-linkedin {
 
     fill: var(--white-color);
-
 }

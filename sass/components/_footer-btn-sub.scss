@@ -1,4 +1,4 @@
-.footer-submit-icon {
+.footer-submit {
   background-color: var(--accent-color);
   border: none;
   min-width: 200px;
@@ -19,14 +19,14 @@
 
 }
 
-.footer-icon {
+.footer-submit__icon {
   position: absolute;
   top: 13px;
   right: 28px;
 
 }
 
-.footer-sub{
+.footer-submit__btn{
   background-color: transparent;
   color: var(--white-color);
   width: 109px;
