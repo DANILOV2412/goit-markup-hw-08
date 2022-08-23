@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
     <!-- логотип -->
 
     <header class="header-page">
-      <div class="conteiner">
+      <div class="conteiner box-header">
         <nav class="nav-head">
           <a href="./index.html" class="logo"
             >Web<span class="logo-logo">Studio</span></a
@@ -58,6 +58,51 @@
           </li>
         </ul>
       </div>
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-icon" width="40" height="40">
+          <use href="./img/desktop/sprite-svg.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu__close" data-menu-close>
+          <svg class="mobile-menu__icon-close" width="40" height="40">
+            <use href="./img/desktop/sprite-svg.svg#close-mobile"></use>
+          </svg>
+        </button>
+
+        <ul class="menu-list">
+          <li>
+            <a class="menu-list__link menu-list__curent" href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li>
+            <a class="menu-list__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li><a class="menu-list__link" href="Контакты">Контакты</a></li>
+        </ul>
+        <div class="mobile-menu__container">
+          <ul class="menu-contact">
+            <li>
+              <a href="tel:380961111111" class="menu-contact__item">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu-contact__item">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="menu-social">
+            <li><a class="menu-social__link" href="#">Instagram</a></li>
+            <li><a class="menu-social__link" href="#">Twitter</a></li>
+            <li><a class="menu-social__link" href="#">Facebook</a></li>
+            <li><a class="menu-social__link" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- заказ услуги кнопка -->
@@ -73,9 +118,8 @@
           <div class="modal">
             <button class="modal-button" type="button" data-modal-close>
               <svg class="close-icon">
-                <use href="./img/sprite-svg.svg#vector"></use>
+                <use href="./img/desktop/sprite-svg.svg#vector"></use>
               </svg>
-              <!-- <img src="./img/close-black-18dp (2) 1.svg" alt="close" /> -->
             </button>
 
             <form class="form">
@@ -85,7 +129,7 @@
                 <span class="form-w-img">
                   <input type="text" class="form-input" name="user-name" />
                   <svg class="form-img" width="18" height="18">
-                    <use href="./img/sprite-svg.svg#icon-name"></use>
+                    <use href="./img/desktop/sprite-svg.svg#icon-name"></use>
                   </svg>
                 </span>
               </label>
@@ -95,7 +139,7 @@
                 <span class="form-w-img">
                   <input type="text" class="form-input" name="user-tel" />
                   <svg class="form-img" width="18" height="18">
-                    <use href="./img/sprite-svg.svg#icon-tel"></use>
+                    <use href="./img/desktop/sprite-svg.svg#icon-tel"></use>
                   </svg>
                 </span>
               </label>
@@ -105,7 +149,7 @@
                 <span class="form-w-img">
                   <input type="text" class="form-input" name="user-mail" />
                   <svg class="form-img" width="18" height="18">
-                    <use href="./img/sprite-svg.svg#icon-mail"></use>
+                    <use href="./img/desktop/sprite-svg.svg#icon-mail"></use>
                   </svg>
                 </span>
               </label>
@@ -140,13 +184,13 @@
       <!-- общая информация -->
 
       <section class="section-home">
-        <div class="conteiner">
+        <div class="conteiner box-home">
           <h2 class="skils">soft skils</h2>
           <ul class="title-text">
             <li>
               <div class="sect-icon">
                 <svg class="icon-home" width="70" height="70">
-                  <use href="./img/sprite-svg.svg#icon-antenna"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="title">Внимание к деталям</h3>
@@ -158,7 +202,7 @@
             <li>
               <div class="sect-icon">
                 <svg class="icon-home" width="70" height="70">
-                  <use href="./img/sprite-svg.svg#icon-clock"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="title">Пунктуальность</h3>
@@ -170,7 +214,7 @@
             <li>
               <div class="sect-icon">
                 <svg class="icon-home" width="70" height="70">
-                  <use href="./img/sprite-svg.svg#icon-diagram"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="title">Планирование</h3>
@@ -182,7 +226,7 @@
             <li>
               <div class="sect-icon">
                 <svg class="icon-home" width="70" height="70">
-                  <use href="./img/sprite-svg.svg#icon-astronaut"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="title">Современные технологии</h3>
@@ -194,6 +238,7 @@
           </ul>
         </div>
       </section>
+      -->
 
       <!-- инфа с картинками -->
 
@@ -224,7 +269,7 @@
           <h2 class="bold">Наша команда</h2>
           <ul class="comand block">
             <li class="border-radius">
-              <img src="./img/Igor.jpg" alt="бордовий" width="270" />
+              <img src="./img/mobile/img1mob.jpg" alt="бордовий" width="270" />
               <div class="comand-prof">
                 <h3 class="title-name">Игорь Демьяненко</h3>
                 <p class="profess">Product Designer</p>
@@ -232,28 +277,36 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-instagram" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-instagram"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-twitter" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-twitter"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-facebook" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-facebook"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-linkedin" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-linkedin"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -264,7 +317,7 @@
             <li class="border-radius">
               <img
                 class="img-block"
-                src="./img/Olga.jpg"
+                src="./img/mobile/img2mob.jpg"
                 alt="блондинка"
                 width="270"
               />
@@ -275,28 +328,36 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-instagram" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-instagram"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-twitter" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-twitter"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-facebook" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-facebook"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-linkedin" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-linkedin"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -307,7 +368,7 @@
             <li class="border-radius">
               <img
                 class="img-block"
-                src="./img/NIKOLAY.jpg"
+                src="./img/mobile/img3mob.jpg"
                 alt="веселий"
                 width="270"
               />
@@ -318,28 +379,36 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-instagram" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-instagram"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-twitter" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-twitter"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-facebook" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-facebook"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-linkedin" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-linkedin"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -350,7 +419,7 @@
             <li class="border-radius">
               <img
                 class="img-block"
-                src="./img/MISHA.jpg"
+                src="./img/mobile/img4mob.jpg"
                 alt="чорний"
                 width="270"
               />
@@ -361,28 +430,36 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-instagram" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-instagram"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-twitter" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-twitter"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-facebook" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-facebook"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="button-linkedin" width="20" height="20">
-                        <use href="./img/sprite-svg.svg#icon-linkedin"></use>
+                        <use
+                          href="./img/desktop/sprite-svg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -394,6 +471,7 @@
       </section>
 
       <!-- client section -->
+
       <section class="clients">
         <div class="conteiner client">
           <h2 class="bold">Постоянные клиенты</h2>
@@ -406,7 +484,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./img/sprite-svg.svg#icon-Logo"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
@@ -418,7 +496,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./img/sprite-svg.svg#icon-Logo-1"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
@@ -430,7 +508,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./img/sprite-svg.svg#icon-Logo-2"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
@@ -442,7 +520,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./img/sprite-svg.svg#icon-Logo-3"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
@@ -454,14 +532,14 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./img/sprite-svg.svg#icon-Logo-4"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button-user">
                 <svg class="button-group">
-                  <use href="./img/sprite-svg.svg#icon-Logo-5"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
@@ -505,28 +583,28 @@
             <li>
               <a href="#" class="under__icon">
                 <svg class="under__instagram" width="20" height="20">
-                  <use href="./img/sprite-svg.svg#icon-instagram"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="under__icon">
                 <svg class="under__twitter" width="20" height="20">
-                  <use href="./img/sprite-svg.svg#icon-twitter"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="under__icon">
                 <svg class="under__facebook" width="20" height="20">
-                  <use href="./img/sprite-svg.svg#icon-facebook"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="under__icon">
                 <svg class="under__linkedin" width="20" height="20">
-                  <use href="./img/sprite-svg.svg#icon-linkedin"></use>
+                  <use href="./img/desktop/sprite-svg.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -548,13 +626,14 @@
                 Подписаться
               </button>
               <svg class="footer-submit__icon" width="24" height="24">
-                <use href="./img/sprite-svg.svg#icon-button"></use>
+                <use href="./img/desktop/sprite-svg.svg#icon-button"></use>
               </svg>
             </div>
           </div>
         </form>
       </div>
     </footer>
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

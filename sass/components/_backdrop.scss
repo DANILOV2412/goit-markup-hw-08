@@ -8,6 +8,7 @@
     opacity: 1;
     transition: opacity 500ms linear, visibility 500ms linear;
     z-index: 10;
+    overflow-y: scroll;
 
     &.is-hidden {
             opacity: 0;
