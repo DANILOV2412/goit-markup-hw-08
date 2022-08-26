@@ -887,6 +887,18 @@ img {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .section-main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/Header.tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-main {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/fon.jpg);
+  }
+}
 .white {
   margin: 0;
   margin-left: auto;
