@@ -43,7 +43,7 @@
           <li>
             <a href="mailto:info@devstudio.com" class="link">
               <svg class="auth-email" width="16" height="12">
-                <use href="./img/sprite-svg.svg#icon-envelope"></use>
+                <use href="./img/desktop/sprite-svg.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -51,7 +51,7 @@
           <li>
             <a href="tel:+380961111111" class="link phone">
               <svg class="auth-phone" width="10" height="16">
-                <use href="./img/sprite-svg.svg#icon-smartphone"></use>
+                <use href="./img/desktop/sprite-svg.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -238,7 +238,6 @@
           </ul>
         </div>
       </section>
-      -->
 
       <!-- инфа с картинками -->
 
@@ -247,15 +246,15 @@
           <h2 class="bold">Чем мы занимаемся</h2>
           <ul class="picture">
             <li>
-              <img src="./img/box1.jpg" alt="клава" width="370" />
+              <img src="./img/desktop/box1.jpg" alt="клава" width="370" />
               <h3 class="pic-title">Десктопные приложения</h3>
             </li>
             <li>
-              <img src="./img/box2.jpg" alt="телефон" width="370" />
+              <img src="./img/desktop/box2.jpg" alt="телефон" width="370" />
               <h3 class="pic-title">Мобильные приложения</h3>
             </li>
             <li>
-              <img src="./img/box3.jpg" alt="планшет" width="370" />
+              <img src="./img/desktop/box3.jpg" alt="планшет" width="370" />
               <h3 class="pic-title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -269,7 +268,21 @@
           <h2 class="bold">Наша команда</h2>
           <ul class="comand block">
             <li class="border-radius">
-              <img src="./img/mobile/img1mob.jpg" alt="бордовий" width="270" />
+              <img
+                class="img-block"
+                srcset="
+                  ./img/desktop/Igor.jpg     270w,
+                  ./img/tablet/Igor.tab.jpg  354w,
+                  ./img/mobile/Igormob1x.jpg 450w,
+                  ./img/desktop/Igor@2x.jpg  540w,
+                  ./img/tablet/Igor.tab.jpg  708w,
+                  ./img/mobile/Igormob2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./img/mobile/Igormob1x.jpg"
+                alt="Игорь"
+                width="270"
+              />
               <div class="comand-prof">
                 <h3 class="title-name">Игорь Демьяненко</h3>
                 <p class="profess">Product Designer</p>
@@ -317,7 +330,17 @@
             <li class="border-radius">
               <img
                 class="img-block"
-                src="./img/mobile/img2mob.jpg"
+                class="photo-prof"
+                srcset="
+                  ./img/desktop/Olga.jpg    270w,
+                  ./img/tablet/Olga.tab.jpg 354w,
+                  ./img/mobile/Olga.jpg     450w,
+                  ./img/desktop/Olga@2x.jpg 540w,
+                  ./img/tablet/Olga.tab.jpg 708w,
+                  ./img/mobile/Olga2x.jpg   900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./img/mobile/Olga.jpg"
                 alt="блондинка"
                 width="270"
               />
@@ -368,8 +391,18 @@
             <li class="border-radius">
               <img
                 class="img-block"
-                src="./img/mobile/img3mob.jpg"
-                alt="веселий"
+                class="photo-prof"
+                srcset="
+                  ./img/desktop/Nikolay.jpg      270w,
+                  ./img/tablet/Nikolay.tab.jpg   354w,
+                  ./img/mobile/Nikolay.mob.jpg   450w,
+                  ./img/desktop/Nikolay@2x.jpg   540w,
+                  ./img/tablet/Nikolay.tab2x.jpg 708w,
+                  ./img/mobile/Nikolaymob2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./img/mobile/Nikolay.mob.jpg"
+                alt="Nikolay"
                 width="270"
               />
               <div class="comand-prof">
@@ -419,8 +452,17 @@
             <li class="border-radius">
               <img
                 class="img-block"
-                src="./img/mobile/img4mob.jpg"
-                alt="чорний"
+                srcset="
+                  ./img/desktop/Mihail.jpg      270w,
+                  ./img/tablet/Mihail.tab.jpg   354w,
+                  ./img/mobile/Mihail.mob.jpg   450w,
+                  ./img/desktop/Mihail@2x.jpg   540w,
+                  ./img/tablet/Mihail.tab2x.jpg 708w,
+                  ./img/mobile/Mihailmob2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./img/mobile/Mihail.mob.jpg"
+                alt="Mihail"
                 width="270"
               />
               <div class="comand-prof">
@@ -474,7 +516,7 @@
 
       <section class="clients">
         <div class="conteiner client">
-          <h2 class="bold">Постоянные клиенты</h2>
+          <h2 class="bold clents">Постоянные клиенты</h2>
           <ul class="button-clien">
             <li>
               <a
@@ -551,7 +593,7 @@
     <!-- подвал -->
 
     <footer class="footer-block">
-      <div class="conteiner">
+      <div class="conteiner foot">
         <div class="footer">
           <a href="./index.html" class="footer__logo"
             >Web<span class="footer__logo-log">Studio</span></a

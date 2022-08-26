@@ -1,62 +1,54 @@
 .comand-under {
-    display: flex;
-    margin: 0;
-    padding: 0 32px;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 32px;
+  list-style: none;
 
-    & :not(:last-child) {
-            margin-right: 10px;
-        }
+  & :not(:last-child) {
+    margin-right: 10px;
+  }
 }
-
-
 
 .comand-under li {
-    padding: 0;
-    box-shadow: none;
-    width: 44px;
-    height: 44px;
+  padding: 0;
+  box-shadow: none;
+  width: 44px;
+  height: 44px;
 }
-
 .button-icon {
-    fill: var(--white-color);
-    display: flex;
-    padding: 0;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: var(--animation);
+  fill: var(--white-color);
+  display: flex;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: var(--animation);
 }
 
-        .comand-under .button-icon {
-            fill: #AFB1B8;
-        
-          &:hover,
-          &:focus {
-              background-color: var(--accent-color);
-          }
-        
-          }
-          
+.comand-under .button-icon {
+  fill: #afb1b8;
 
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
 
 .button-icon:hover .button-instagram,
 .button-icon:hover .button-twitter,
 .button-icon:hover .button-facebook,
 .button-icon:hover .button-linkedin {
-    fill: var(--white-color);
-
+  fill: var(--white-color);
 }
 
 .button-icon:focus .button-instagram,
 .button-icon:focus .button-twitter,
 .button-icon:focus .button-facebook,
 .button-icon:focus .button-linkedin {
-
-    fill: var(--white-color);
+  fill: var(--white-color);
 }

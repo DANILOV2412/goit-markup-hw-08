@@ -1,74 +1,66 @@
 .clients {
-    padding: 60px 0;
-}
+  padding: 60px 15px;
 
-.clients-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding: 0;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+  & h2 {
+    margin-bottom: 30px;
+  }
 }
 
 .button-clien {
-display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+  list-style-type: none;
 }
 
-
-
+@media screen and (min-width: 768px) {
+  .button-clien {
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
-    .button-client {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .button-client li {
-        width: 170px;
-        height: 92px;
-    }
+  .button-clien {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .button-clien {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.button-clien li {
-    margin: 0;
-    padding: 0;
+  .button-clien li {
     width: 170px;
     height: 92px;
+  }
 }
 
 .button-user {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    margin: 0;
-    padding: 0;
-    // width: 170px;
-    // height: 92px;
-    background-color: transparent;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    color: #AFB1B8;
-    position: relative;
-    transition: var(--animation);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 92px;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: #afb1b8;
+  transition: color var(--animation);
 
-    &:hover,
-    &:focus {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-        }
+  &:hover,
+  &:focus {
+    border-color: var(--logo-focus-color);
+    color: var(--logo-focus-color);
+  }
 }
 
 .button-group {
-    fill: currentColor;
-    width: 106px;
-    height: 60px;
-
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
-

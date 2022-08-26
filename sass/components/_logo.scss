@@ -1,43 +1,38 @@
-.logo-logo {
-        transition: var(--animation);
-        color: var(--secondary-color);
-
-&:hover,
-&:focus {
-        color: var(--accent-color);
-    }
-
+.logo {
+  color: var(--accent-color);
+  font-family: raleway, sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
+.logo-logo {
+  transition: var(--animation);
+  color: var(--secondary-color);
 
-.logo{
-    display: block;
-    padding-top: 16px;
-    padding-left: 15px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .logo {
-//     margin-right: 93px;
-    color: var(--accent-color);
-    font-family: raleway, sans-serif;
-    text-decoration: none;
-//     font-style: normal;
-    letter-spacing: 0.03em;
-//     font-weight: 700;
-//     font-size: 26px;
-//     line-height: 1.2;
-//       display: block;
-
-}
-@media screen and (min-width: 768px) {
-    .logo {
-        margin-right: 88px;
-    }
+  display: block;
+  padding-top: 13px;
 }
 
 @media screen and (min-width: 768px) {
-    .logo {
-        margin-right: 93px;
-        font-size: 26px;
-        line-height: 1.2;
-    }
+  .logo {
+    margin-right: 88px;
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }

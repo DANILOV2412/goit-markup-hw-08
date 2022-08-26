@@ -1,56 +1,62 @@
-  .footer-button{
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 60px;
-  }
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .under {
-    display: flex;
-    // margin-left: 70px;
-    padding-left: 0;
-    margin-top: 20px;
+  display: flex;
+  padding-left: 0;
+  margin-top: 20px;
 
-    & li :hover,
-    & li :focus {
-        background-color: var(--accent-color);
-    }
+  & li :hover,
+  & li :focus {
+    background-color: var(--accent-color);
+  }
 }
 
- .under__icon {
-    padding: 0;
-    background: rgba(255, 255, 255, 0.1);
-    display: flex;
-    padding: 0;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: none;
-    justify-content: center;
-    align-items: center;
+.under__icon {
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 
-        .under__icon:hover,
-        .under__icon:focus {
-            background-color: var(--accent-color);
-        }
-                .under__icon:hover .under__instagram,
-                .under__icon:hover .under__twitter,
-                .under__icon:hover .under__facebook,
-                .under__icon:hover .under__linkedin {
-                    fill: var(--white-color);
-        
-                }
-        
-                .under__icon:focus .under__instagram,
-                .under__icon:focus .under__twitter,
-                .under__icon:focus .under__facebook,
-                .under__icon:focus .under__linkedin {
-        
-                    fill: var(--white-color);
-                }
-                                .under__instagram,
-                                .under__twitter,
-                                .under__facebook,
-                                .under__linkedin{
-                                    fill: var(--white-color);
-                                }
+.under__icon:hover,
+.under__icon:focus {
+  background-color: var(--accent-color);
+}
+.under__icon:hover .under__instagram,
+.under__icon:hover .under__twitter,
+.under__icon:hover .under__facebook,
+.under__icon:hover .under__linkedin {
+  fill: var(--white-color);
+}
+
+.under__icon:focus .under__instagram,
+.under__icon:focus .under__twitter,
+.under__icon:focus .under__facebook,
+.under__icon:focus .under__linkedin {
+  fill: var(--white-color);
+}
+.under__instagram,
+.under__twitter,
+.under__facebook,
+.under__linkedin {
+  fill: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .under {
+    margin-left: 70px;
+  }
+  .footer-button {
+    margin: 0;
+  }
+}

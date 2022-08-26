@@ -1,60 +1,58 @@
-
-.picture {
+@media screen and (max-width: 1199px) {
+  .section-info {
     display: none;
-    padding-bottom: 94px;
-}
-.bold{
-    font-size: 0;
+  }
 }
 
+.section-info {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.bold {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
 @media screen and (min-width: 1200px) {
-    .picture {
-        display: block;
-    }
+  .picture {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+  .picture li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .pic-title {
+    bottom: 0;
+    padding: 27px 0px;
+    margin: 0;
+    width: 370px;
+    position: absolute;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-
-// .section-info {
-//     margin: 0;
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-
-
-// }
-
-// .picture {
-//     display: flex;
-//     justify-content: space-between;
-//     margin: 0;
-//     padding: 0;
-//     position: relative;
-// }
-
-// .pic-title {
-//     bottom: 0;
-//     padding: 27px 0px;
-//     margin: 0;
-//     width: 370px;
-//     position: absolute;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--white-color);
-//     background: rgba(47, 48, 58, 0.8);
-// }
-
 // .bold {
-//     margin-top: 0;
-//     margin-bottom: 50px;
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 42px;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--secondary-color);
-
-
-
-// }
+//   margin-top: 0;
+//   margin-bottom: 50px;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 42px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: var(--secondary-color);
+//
