@@ -33,6 +33,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .conteiner {
+    max-width: 1200px;
     justify-content: space-between;
     align-items: center;
   }
@@ -42,6 +43,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -580,6 +582,7 @@ img {
   background-color: var(--accent-color);
   padding: 6px 22px;
   border-radius: 4px;
+  border-color: transparent;
 }
 
 .button-list li + li {
@@ -918,6 +921,17 @@ img {
   max-height: 600px;
 }
 
+@media screen and (min-width: 1200px) {
+  .white {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    max-width: 696px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
 .model-title {
   margin: 0;
   padding: 0;
@@ -1106,7 +1120,6 @@ img {
 }
 .section-info {
   margin: 0;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -1220,12 +1233,6 @@ img {
     line-height: 1.16;
   }
 }
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .footer-title {
   font-weight: 700;
   font-size: 14px;
@@ -1270,7 +1277,6 @@ img {
 .address {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
@@ -1297,7 +1303,15 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .address {
+    align-items: center;
+  }
   .conteiner.foot {
     display: flex;
     flex-wrap: wrap;
@@ -1307,6 +1321,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
   .conteiner.foot {
     display: flex;
     justify-content: baseline;
@@ -1314,6 +1332,7 @@ img {
   }
   .address {
     margin: 0;
+    text-align: left;
   }
   .adress-cont {
     align-items: flex-start;
@@ -1420,16 +1439,26 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 480px) {
+  .img-portfolio {
+    padding: 0;
+  }
+  .img-portfolio li {
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .img-portfolio {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
     margin: 0;
+    padding: 0;
     padding-top: 36px;
   }
   .img-portfolio li {
     margin-bottom: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
